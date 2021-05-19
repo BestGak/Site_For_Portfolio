@@ -461,7 +461,12 @@ right: -50px;
 
 @media only screen and (max-width: 600px){
   .text-collection{
-
+    display: inline-block;
+    padding-bottom: 18px;
+    width: 300px;
+  }
+  .year-menu{
+    margin: 69px 0px 0px 0px;
   }
 }
 
