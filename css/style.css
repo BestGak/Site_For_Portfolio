@@ -263,6 +263,7 @@ padding-top: 30px;
   height: 538px;
   border: 1px solid #C4C4C4;
   border-top: none;
+  margin: 0 auto;
 }
 
 .img-degustation{
@@ -291,6 +292,7 @@ padding-top: 30px;
   line-height: 54px;
   font-weight: 700;
   height: 100px;
+  text-align: center;
 
 }
 
@@ -441,8 +443,34 @@ right: -50px;
 .images-collection{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 55%;
   padding: 50px 0px;
+}
+.img-degustation1, .img-degustation2{
+  width: 150px;
+  height: 150px;
+}
+.suptitle-degustation{
+  bottom: 25px;
+}
+.title-degustation{
+  bottom: 40px;
+}
+.degustation-line{
+  bottom: 60px;
+}
+.title-degustation::after , .title-degustation::before{
+  display: none;
+}
+.footer-text1 {
+padding-right: 30px;
+font-size: 0.7em;
+}
+.footer-social{
+  padding-right: 15px;
+}
+.link-text{
+  font-size: 0.7em;
 }
 }
 
@@ -456,6 +484,60 @@ right: -50px;
 
 .suptitle-about{
   font-size: 0.8em;
+}
+.footer-text1 {
+  padding-right: 5px;
+}
+}
+
+@media only screen and (max-width: 740px) {
+  .img-degustation1, .img-degustation2{
+    width: 120px;
+    height: 120px;
+  } 
+.container-degustation , .suptitle-degustation, .text-degustation{
+  width: 500px;
+}
+.form-deg , .degustation-footer{
+  width: 480px;
+  margin: 0 auto;
+}
+.btn-degustation{
+  width: 480px;
+  margin: 40px auto 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.degustation-line{
+  bottom: 40px;
+}
+}
+
+@media only screen and (max-width: 660px) {
+  .link-text , .footer-text1{
+    font-size: 0.5em;
+  }
+  .img-degustation1, .img-degustation2{
+    display: none;
+}
+.container-degustation , .suptitle-degustation, .text-degustation{
+  width: 350px;
+  text-align: center;
+}
+.form-deg , .degustation-footer{
+  width: 320px;
+  margin: 0 auto;
+}
+.btn-degustation{
+  width: 320px;
+}
+.suptitle-degustation{
+  font-size: 0.9em;
+}
+.form-degustation{
+  font-size: 12px;
 }
 }
 
@@ -483,9 +565,24 @@ right: -50px;
     font-size: 0.8em;
     padding: 15px 0px 0px 0;
   }
+  .footer-link{
+    display: inline-block;
+    padding-bottom: 10px;
   }
+  .link-text{
+    margin: 0 14px;
+    
+  }
+  .container-footer {
+    height: 113px;
+  }
+  .img-footer {
+    padding: 0px;
+    margin: 0px 3px;
+  }
+}
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 370px) {
     .about-text{
       width: 280px;
     }
@@ -501,4 +598,25 @@ right: -50px;
     .text-header{
       font-size: 0.8em;
     }
+
+    .container-degustation , .suptitle-degustation, .text-degustation{
+      width: 300px;
+    }
+
+    .form-deg , .degustation-footer{
+      width: 280px;
+      margin: 0 auto;
+    }
+    .btn-degustation{
+      width: 280px;
+    }
+    .form-degustation{
+      font-size: 10px;
+    }
+    .degustation-line{
+      bottom: 30px;
+    }
+    .suptitle-degustation {
+      font-size: 0.8em;
+  }
   }
