@@ -222,7 +222,7 @@ padding-top: 30px;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 26.5px;
   color: #282828;
   padding: 10px 0px 0px 30px;
   display: inline-block;
@@ -240,8 +240,8 @@ padding-top: 30px;
 
 .year-menu{
   display: inline-block;
-  padding-bottom: 38.1px;
-  border-bottom: 1px solid #282828
+  padding-bottom: 19px;
+  border-bottom: 1px solid #282828;
 }
 
 .btn-about{
