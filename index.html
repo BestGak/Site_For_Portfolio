@@ -8,21 +8,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/style.min.css">
 <title>Le corte</title>
 </head>
 <body>
-  <section class="main">
+  <section id="main" class="main">
     <div class="container">
       <div class="text-header">
       <p class="text-header">Новокузнечный переулок 4/1</p>
       <p class="text-header">8 (812) 123-45-67</p>
     </div>
       <div class="nav-header">
-        <a id="border-left" class="nav-text" href="">Каталог</a>
-        <a class="nav-text" href="">Доставка</a>
-        <a class="nav-text" href="">Коллекции</a>
-        <a class="nav-text" href="">Контакты</a>
+        <a href="#container-catalog" id="border-left" class="nav-text">Каталог</a>
+        <a href="#developer-container" id="delivery" class="nav-text">Доставка</a>
+        <a id="collection" class="nav-text">Коллекции</a>
+        <a href="#container-footer" id="contact" class="nav-text">Контакты</a>
       </div>
       <div class="btn-header">
         <button class="btn-head">ВИННАЯ КАРТА</button>
@@ -47,8 +47,8 @@
   
   <!--Collection-->
 <section class="catalog">
-    <div class="container">
-      <div class="container-collection">
+    <div id="container-catalog" class="container">
+      <div id="skroll-collection" class="container-collection">
         <div class="text-collection">
           <p class="collection-text">Новинки коллекций</p>
           <h2 class="title-collection">Март 1980
@@ -119,7 +119,7 @@
     <!--Degustation-->
       <section class="degustation">
         <div class="container">
-          <div class="container-degustation">
+          <div id="container-degustation" class="container-degustation">
             <div class="img-degustation">
             <img class="img-degustation1" src="./images/1.svg" alt="">
             <p class="title-degustation">ЗАПИСЬ НА ДЕГУСТАЦИЮ</p>
@@ -141,11 +141,11 @@
 
       <!--Developer-->
       <section class="developing">
-        <div class="container">
+        <div id="developer-container" class="container">
           <h1 class="title-developing">Доставка</h1>
           <div class="developer-container">
               <div class="img-developing">
-                  <img class="image-developing" src="./images/klara-kulikova-CPMZguYURMw-unsplash 1.jpg" alt="">
+                  <img class="image-developing" src="/images/klara-kulikova-CPMZguYURMw-unsplash 1.jpg" alt="">
               </div>
               <div class="text-developing">               
                   <label class="form-text-developing">Ваш город:<input class="form-developing" type="text" required></label>
@@ -167,7 +167,7 @@
       <!--Footer-->
       <footer class="footer">
         <div class="container">
-          <div class="container-footer">
+          <div id="container-footer" class="container-footer">
             <div class="footer-link">
           <a class="link-text" href="">Главная</a>
           <a class="link-text" href="">Каталог</a>
@@ -190,6 +190,9 @@
       </div>
         </div>
       </footer>
-  <script src="./main.js"></script>
+      <a href="#main" class="pageup">
+        <img src="images/up.svg" alt="up">
+    </a>
+      <script src="js/main.min.js"></script>
 </body>
 </html>
